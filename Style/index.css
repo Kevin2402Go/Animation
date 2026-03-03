@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #85C1E9;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.master {
+    border: 10px solid black;
+    border-radius: 10px 20px 30px;
+    height: 50vh;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    animation: infinite 2s master;
+}
+@keyframes master {
+    0%{
+        transform: scale(0.1);
+        background-color: burlywood;
+        box-shadow: 20px 10px 20px red;
+        border-radius: 40px;
+    }
+    50%{
+        transform: scale(0.2);
+        background-color: springgreen;
+        box-shadow: 30px 10px 10px red;
+        border-radius: 10px;
+    }
+    100%{
+        transform: scale(0.1);
+        background-color: slateblue;
+        box-shadow: 50px 10px 5px red;
+        border-radius: 10px;
+    }
+}
+.hijo {
+    border: 9px solid white;
+    border-radius: 30px;
+    height: 100%;
+    width: 100lvh;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    animation: infinite 5s hijo;
+    position: relative;
+}
+@keyframes hijo {
+    0%{
+        transform: scale(1.1);
+        background-color: burlywood;
+        box-shadow: 20px 10px 20px gold;
+        border-radius: 40px;
+    }
+    50%{
+        transform: scale(1.2);
+        background-color: springgreen;
+        box-shadow: 30px 10px 10px red;
+        border-radius: 50px;
+    }
+    100%{
+        transform: scale(1.1);
+        background-color: slateblue;
+        box-shadow: 0 0 0 black;
+        border-radius: 60px;
+    }
+}
+.sub-hijo {
+    border: 9px solid black;
+    border-radius: 10px 20px 30px;
+    height: 50vh;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    animation: infinite 2s sub;
+}
+@keyframes sub {
+    0%{
+        transform: scale(1.1);
+        background-color: burlywood;
+        box-shadow: 20px 10px 20px red;
+        border-radius: 40px;
+    }
+    50%{
+        transform: scale(1.8);
+        background-color: springgreen;
+        box-shadow: 30px 10px 10px red;
+        border-radius: 10px;
+    }
+    100%{
+        transform: scale(10.7);
+        background-color: slateblue;
+        box-shadow: 50px 10px 5px red;
+        border-radius: 10px;
+    }
+}

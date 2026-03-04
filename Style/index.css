@@ -93,8 +93,8 @@ h5{
 }
 
 @keyframes hijo {
-    from { transform: rotate(-10deg); }
-    to { transform: rotate(10deg); }
+    from { transform: rotate(-8deg); }
+    to { transform: rotate(8deg); }
 }
 .sub_hijo {
     border-radius: 10px 20px 30px;

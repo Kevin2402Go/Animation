@@ -34,6 +34,7 @@ h5{
     text-decoration: underline;
 }
 .master {
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -46,6 +47,25 @@ h5{
     backdrop-filter: blur(10px);
     animation: infinite 2s master;
     font-size: 50px;
+}
+.master::before,
+.master::after {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 120px;
+    background: black;
+    top: 0;
+}
+
+/* Línea izquierda */
+.master::before {
+    left: 40%;
+}
+
+/* Línea derecha */
+.master::after {
+    right: 40%;
 }
 @keyframes master {
     from {
@@ -67,7 +87,14 @@ h5{
     justify-content: center;
     align-items: center;
     background: black;
-    animation: infinite 0.5s hijo;
+    animation: infinite 1s hijo 3s ease-in-out infinite alternate;
+      margin-top: 120px; /* mismo tamaño que las líneas */
+      transform-origin: top center;
+}
+
+@keyframes hijo {
+    from { transform: rotate(-10deg); }
+    to { transform: rotate(10deg); }
 }
 .sub_hijo {
     border-radius: 10px 20px 30px;
